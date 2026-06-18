@@ -18,7 +18,7 @@
         :root {
             --forest: #1b261d;
             --clay: #b87333;
-            --black: #1a1a1a; /* New high-contrast color */
+            --black: #1a1a1a;
             --cream: #f9f7f2;
         }
         body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--black); margin: 0; background: var(--cream); }
@@ -40,10 +40,10 @@
             font-weight: 600;
         }
 
-        /* SMALLER TRADEMARK FIX */
+        /* TINY TRADEMARK FIX */
         h1 sup { 
-            font-size: 0.35em; 
-            vertical-align: 2.2em; 
+            font-size: 0.3em; 
+            vertical-align: super; 
             font-family: sans-serif;
             font-weight: normal;
         }
@@ -57,12 +57,13 @@
             letter-spacing: 1px;
         }
 
-        /* SHOWS THE WHOLE PHOTO WITHOUT CROPPING */
+        /* SHOWS THE WHOLE PHOTO WITHOUT BEING GIANT */
         .hero-image { 
             width: 100%; 
-            height: auto; 
+            max-width: 600px; /* Prevents the 'Giant' look */
+            height: auto;     /* Shows the whole photo / no cropping */
             display: block; 
-            border-bottom: 2px solid #ddd; 
+            margin: 0 auto;   /* Centers the photo */
         }
         
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
@@ -88,7 +89,7 @@
             padding: 40px; 
             border: 1px solid #e0e0e0;
             box-shadow: 10px 10px 0px var(--forest);
-            margin-top: -80px; 
+            margin-top: -40px; /* Balanced overlap */
             position: relative;
             z-index: 10;
         }
@@ -98,7 +99,6 @@
         .ingredient-grid { display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
         @media (min-width: 600px) { .ingredient-grid { grid-template-columns: 1fr 1fr; } }
         
-        /* IMPROVED TEXT CONTRAST */
         .ing-card { background: white; padding: 25px; border: 1px solid #eee; color: var(--black); }
         .ing-card b { 
             color: var(--clay); 
