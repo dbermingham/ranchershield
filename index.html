@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RancherShield | The Botanical Barrier</title>
     <style>
-        /* Modern Ranch Aesthetic */
         :root {
             --dark-green: #2d3e2f;
             --clay: #a67c52;
@@ -13,13 +12,14 @@
             --cream: #fdfaf5;
         }
         body { font-family: 'Times New Roman', serif; line-height: 1.6; color: var(--slate); margin: 0; background: var(--cream); }
-        header { background: var(--dark-green); color: white; padding: 80px 20px; text-align: center; border-bottom: 5px solid var(--clay); }
+        header { background: var(--dark-green); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--clay); }
+        .hero-image { width: 100%; max-height: 500px; object-fit: cover; display: block; }
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
-        h1 { font-size: 3.5em; margin: 0; letter-spacing: 4px; text-transform: uppercase; }
+        h1 { font-size: 3em; margin: 0; letter-spacing: 4px; text-transform: uppercase; }
         h2 { color: var(--dark-green); font-size: 2em; border-bottom: 1px solid var(--clay); padding-bottom: 10px; margin-top: 50px; }
-        .hero-subtext { font-style: italic; font-size: 1.2em; opacity: 0.9; }
         .story-box { background: white; padding: 30px; border-left: 5px solid var(--dark-green); box-shadow: 2px 2px 15px rgba(0,0,0,0.05); }
-        .ingredient-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 30px; }
+        .ingredient-img { width: 100%; height: auto; margin-top: 30px; border: 1px solid #ddd; }
+        .ingredient-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
         @media (min-width: 600px) { .ingredient-grid { grid-template-columns: 1fr 1fr; } }
         .ing-card { background: white; padding: 20px; border: 1px solid #eee; }
         .ing-card b { color: var(--clay); display: block; font-size: 1.2em; margin-bottom: 5px; }
@@ -32,16 +32,20 @@
 
 <header>
     <h1>RANCHERSHIELD</h1>
-    <p class="hero-subtext">The Science of the Barrier. The Strength of the Ranch.</p>
+    <p>The Science of the Barrier. The Strength of the Ranch.</p>
 </header>
+
+<img src="hero.jpg" alt="RancherShield Tin at Sunset" class="hero-image">
 
 <div class="container">
     <div class="story-box">
         <h2>Rancher-Owned. Foothill-Proven.</h2>
-        <p>Most bug sprays were designed for backyards. They don't understand the clay gnats and aggressive midges of the Sierra Foothills. RancherShield was born in Shingle Springs out of necessity. We needed a barrier that would stay on during a 12-hour workday, thrive in the California sun, and physically block the bite. This is that shield.</p>
+        <p>RancherShield was born in the clay hills of Shingle Springs out of necessity. As ranchers and farmers, we needed a barrier that would stay on during a 12-hour workday, thrive in the California sun, and physically block the bite. This is that shield.</p>
     </div>
 
     <h2>The 8-Ingredient Science</h2>
+    <img src="ingredients.jpg" alt="RancherShield Ingredients" class="ingredient-img">
+    
     <div class="ingredient-grid">
         <div class="ing-card"><b>1. Beeswax</b>The physical wall. It creates a breathable barrier that no-see-um mouthparts cannot penetrate.</div>
         <div class="ing-card"><b>2. Lanolin</b>The grip. Pure USP wool grease that locks the balm to your skin even when you sweat.</div>
@@ -52,19 +56,16 @@
         <div class="ing-card"><b>7. Lavender Oil</b>The healer. Calms the "fire" of old bites and supports skin repair while you work.</div>
         <div class="ing-card"><b>8. Rosemary Oil</b>The preservative. Keeps the balm stable in the heat and adds a fresh, herbal finish.</div>
     </div>
-
-    <h2>How to Apply</h2>
-    <p>RancherShield is a thick, waxy armor. Scoop a small amount and warm it between your fingers. Apply to ankles, wrists, and neck. For night-time protection in RVs or homes, apply to pulse points before sleep.</p>
 </div>
 
 <div class="cta-section">
     <h3>Ready for the Shield?</h3>
     <p>2oz Small-Batch Tin | $18.00</p><br>
-    <a href="mailto:change-this-to-your-email@gmail.com" class="btn">Order Now</a>
+    <a href="mailto:your-email@gmail.com" class="btn">Order via Email</a>
 </div>
 
 <div class="footer">
-    <p>RancherShield is a botanical skin balm. Not a drug or registered pesticide. Perform patch test before use. Contains Lanolin (Wool) and Coconut Oil (Tree Nut). Made in Shingle Springs, CA.</p>
+    <p>RancherShield is a botanical skin balm. Made in Shingle Springs, CA. Contains Lanolin (Wool) and Coconut Oil (Tree Nut).</p>
 </div>
 
 </body>
