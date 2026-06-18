@@ -18,14 +18,14 @@
         header { 
             background: var(--forest); 
             color: white; 
-            padding: 100px 20px; 
+            padding: 80px 20px; 
             text-align: center; 
             border-bottom: 6px solid var(--clay);
         }
         
         h1 { 
             font-family: 'Cormorant Garamond', serif; 
-            font-size: 4em; 
+            font-size: clamp(2.5em, 8vw, 4em); /* Scales size for phone screens */
             margin: 0; 
             letter-spacing: 8px; 
             text-transform: uppercase;
@@ -35,31 +35,38 @@
         .tagline { 
             font-family: 'Cormorant Garamond', serif;
             font-style: italic; 
-            font-size: 1.4em; 
+            font-size: 1.3em; 
             margin-top: 10px;
             color: var(--clay);
             letter-spacing: 1px;
         }
 
-        .hero-image { width: 100%; max-height: 600px; object-fit: cover; display: block; border-bottom: 2px solid #ddd; }
+        .hero-image { 
+            width: 100%; 
+            height: 500px; /* Fixed height for a consistent look */
+            object-fit: cover; 
+            object-position: center 18%; /* MOVES VIEW UP TO SHOW THE RANCHER LOGO */
+            display: block; 
+            border-bottom: 2px solid #ddd; 
+        }
         
-        .container { max-width: 900px; margin: auto; padding: 60px 20px; }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
         
         h2 { 
             font-family: 'Cormorant Garamond', serif;
             color: var(--forest); 
-            font-size: 2.5em; 
+            font-size: 2.2em; 
             border-bottom: 1px solid var(--clay); 
             padding-bottom: 10px; 
-            margin-top: 50px; 
+            margin-top: 40px; 
         }
         
         .story-box { 
             background: white; 
-            padding: 40px; 
+            padding: 35px; 
             border: 1px solid #e0e0e0;
             box-shadow: 10px 10px 0px var(--forest);
-            margin-top: -100px; /* Pulls it up onto the hero image slightly */
+            margin-top: -60px; /* Reduced overlap so it doesn't cover the tin face */
             position: relative;
             z-index: 10;
         }
@@ -73,16 +80,17 @@
         .ing-card:hover { border-color: var(--clay); }
         .ing-card b { color: var(--clay); display: block; font-size: 1.3em; margin-bottom: 8px; font-family: 'Cormorant Garamond', serif; }
         
-        .cta-section { text-align: center; padding: 100px 20px; background: var(--forest); color: white; margin-top: 60px; }
+        .cta-section { text-align: center; padding: 80px 20px; background: var(--forest); color: white; margin-top: 60px; }
         .btn { 
             background: var(--clay); 
             color: white; 
-            padding: 20px 50px; 
+            padding: 18px 45px; 
             text-decoration: none; 
             font-weight: 600; 
             text-transform: uppercase; 
             letter-spacing: 3px;
             font-size: 1.1em;
+            display: inline-block;
         }
         
         .footer { background: #111; color: #777; padding: 60px 20px; text-align: center; font-size: 0.85em; }
@@ -95,16 +103,16 @@
     <div class="tagline">Superior Botanical Barriers for the Modern Rancher.</div>
 </header>
 
-<img src="hero.jpg" alt="RancherShield Tin at Sunset" class="hero-image">
+<img src="hero.jpg" alt="Rancher Shield Tin at Sunset" class="hero-image">
 
 <div class="container">
     <div class="story-box">
         <h2>Rancher Owned. Foothills Proven.</h2>
-        <p>Rancher Shield wasn't born in a boardroom. It was forged in the clay hills of Shingle Springs, California. As ranchers, we know that store-bought sprays don’t stand up to the long workdays and the aggressive biting insects like the no see-ums of the foothills. We built a shield that works as hard as you do.</p>
+        <p>Rancher Shield wasn't born in a boardroom. It was forged in the clay hills of Shingle Springs, California. As ranchers, we know that store-bought sprays don’t stand up to the long workdays and the aggressive biting insects like the no-see-ums of the foothills. We built a shield that works as hard as you do.</p>
     </div>
 
     <h2>The 8-Ingredient Science</h2>
-    <img src="ingredients.jpg" alt="RancherShield Ingredients" class="ingredient-img">
+    <img src="ingredients.jpg" alt="Rancher Shield Ingredients" class="ingredient-img">
     
     <div class="ingredient-grid">
         <div class="ing-card"><b>1. Beeswax</b>The physical wall. A breathable, dense wax barrier that no-see-um mouthparts physically cannot penetrate.</div>
@@ -121,11 +129,11 @@
 <div class="cta-section">
     <h3>The Rancher's Standard</h3>
     <p>Hand-Poured 2oz Small-Batch Tin | $20.00</p><br><br>
-    <a href="mailto:dustinbermingham@gmail.com" class="btn">Order your Rancher Shield today!!</a>
+    <a href="mailto:dustinbermingham@gmail.com" class="btn">Order your Rancher Shield today!</a>
 </div>
 
 <div class="footer">
-    <p>RancherShield is a handcrafted botanical skin balm. Not a drug or registered pesticide. Perform patch test before use. Contains Lanolin (Wool) and Coconut Oil (Tree Nut). Made in Shingle Springs, CA.</p>
+    <p>Rancher Shield is a handcrafted botanical skin balm. Not a drug or registered pesticide. Perform patch test before use. Contains Lanolin (Wool) and Coconut Oil (Tree Nut). Made in Shingle Springs, CA.</p>
 </div>
 
 </body>
