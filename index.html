@@ -18,14 +18,14 @@
         header { 
             background: var(--forest); 
             color: white; 
-            padding: 80px 20px; 
+            padding: 100px 20px; 
             text-align: center; 
             border-bottom: 6px solid var(--clay);
         }
         
         h1 { 
             font-family: 'Cormorant Garamond', serif; 
-            font-size: clamp(2.5em, 8vw, 4em); 
+            font-size: 4em; 
             margin: 0; 
             letter-spacing: 8px; 
             text-transform: uppercase;
@@ -35,49 +35,44 @@
         .tagline { 
             font-family: 'Cormorant Garamond', serif;
             font-style: italic; 
-            font-size: 1.3em; 
+            font-size: 1.4em; 
             margin-top: 10px;
             color: var(--clay);
             letter-spacing: 1px;
         }
 
-        .hero-image { 
-            width: 100%; 
-            height: 500px; 
-            object-fit: cover; 
-            object-position: center 18%; 
-            display: block; 
-            border-bottom: 2px solid #ddd; 
-        }
+        /* REVERTED TO YOUR ORIGINAL SETTINGS */
+        .hero-image { width: 100%; max-height: 600px; object-fit: cover; display: block; border-bottom: 2px solid #ddd; }
         
-        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        .container { max-width: 900px; margin: auto; padding: 60px 20px; }
         
-        .section-title {
+        /* CENTERED THE SCIENCE TITLE */
+        .science-title {
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
             color: var(--forest); 
             font-size: 2.5em; 
             border-bottom: 1px solid var(--clay); 
             padding-bottom: 10px; 
-            margin-top: 60px;
-            margin-bottom: 30px;
+            margin-top: 50px;
         }
 
         h2 { 
             font-family: 'Cormorant Garamond', serif;
             color: var(--forest); 
-            font-size: 2.2em; 
+            font-size: 2.5em; 
             border-bottom: 1px solid var(--clay); 
             padding-bottom: 10px; 
-            margin-top: 40px; 
+            margin-top: 50px; 
         }
         
+        /* REVERTED TO YOUR ORIGINAL SETTINGS */
         .story-box { 
             background: white; 
-            padding: 35px; 
+            padding: 40px; 
             border: 1px solid #e0e0e0;
             box-shadow: 10px 10px 0px var(--forest);
-            margin-top: -60px; 
+            margin-top: -100px; 
             position: relative;
             z-index: 10;
         }
@@ -89,24 +84,23 @@
         
         .ing-card { background: white; padding: 25px; border: 1px solid #eee; transition: 0.3s; }
         .ing-card:hover { border-color: var(--clay); }
-        .ing-card b { color: var(--clay); display: block; font-size: 1.3em; margin-bottom: 12px; font-family: 'Cormorant Garamond', serif; }
-        .ing-card p { margin: 0; line-height: 1.5; font-size: 0.95em; }
+        /* MADE WORDS EASIER TO SEE */
+        .ing-card b { color: var(--clay); display: block; font-size: 1.4em; margin-bottom: 8px; font-family: 'Cormorant Garamond', serif; }
         
-        .cta-section { text-align: center; padding: 80px 20px; background: var(--forest); color: white; margin-top: 60px; }
+        .cta-section { text-align: center; padding: 100px 20px; background: var(--forest); color: white; margin-top: 60px; }
         .btn { 
             background: var(--clay); 
             color: white; 
-            padding: 18px 45px; 
+            padding: 20px 50px; 
             text-decoration: none; 
             font-weight: 600; 
             text-transform: uppercase; 
             letter-spacing: 3px;
             font-size: 1.1em;
-            display: inline-block;
         }
         
         .footer { background: #111; color: #777; padding: 60px 20px; text-align: center; font-size: 0.85em; }
-        .full-ingredients { font-style: italic; margin-top: 20px; color: #999; }
+        .official-ingredients { color: #aaa; margin-bottom: 20px; font-style: italic; }
     </style>
 </head>
 <body>
@@ -121,35 +115,35 @@
 <div class="container">
     <div class="story-box">
         <h2>Rancher Owned. Foothills Proven.</h2>
-        <p>Rancher Shield wasn't born in a boardroom. It was forged in the clay hills of Shingle Springs, California. As ranchers, we know that store-bought sprays don’t stand up to long workdays and aggressive biting insects. We built a 100% active ingredient barrier—with zero fillers—to stand against the no-see-ums, midges, ticks, and fleas that plague the foothills. Rancher Shield works as hard as you do.</p>
+        <p>Rancher Shield wasn't born in a boardroom. It was forged in the clay hills of Shingle Springs, California. As ranchers, we know that store-bought sprays don’t stand up to long workdays and aggressive biting insects. We built a 100% active ingredient barrier with no fillers to stand against the no-see-ums, midges, ticks, and fleas that plague the foothills. Rancher Shield works as hard as you do.</p>
     </div>
 
-    <div class="section-title">The 8-Ingredient Science</div>
-    <p style="text-align: center; font-style: italic; margin-top: -20px;">100% Active Ingredients. Zero Fillers. Zero Water.</p>
+    <div class="science-title">The 8-Ingredient Science</div>
+    <p style="text-align: center; font-style: italic; margin-top: -20px;">100% Active Ingredients. No Fillers.</p>
     
     <img src="ingredients.jpg" alt="Rancher Shield Ingredients" class="ingredient-img">
     
     <div class="ingredient-grid">
-        <div class="ing-card"><b>1. Beeswax</b><p>The physical wall. A breathable, dense wax barrier that no-see-um mouthparts physically cannot penetrate.</p></div>
-        <div class="ing-card"><b>2. Lanolin</b><p>The grip. Pure USP wool grease. It’s the world’s most effective waterproof adhesive, keeping the shield on while you sweat.</p></div>
-        <div class="ing-card"><b>3. Coconut Oil</b><p>The cloak. Medium-chain fatty acids that mask the human scent, making you invisible to searching sensors.</p></div>
-        <div class="ing-card"><b>4. Catnip Oil</b><p>The powerhouse. University proven to be 10x more effective than DEET. It triggers a physical "pain" response in biting insects.</p></div>
-        <div class="ing-card"><b>5. Cedarwood Oil</b><p>The anchor. A heavy base-note that binds the other oils to the wax. Cedarwood is also a primary defense against fleas and ticks.</p></div>
-        <div class="ing-card"><b>6. Palmarosa Oil</b><p>The radar jammer. Jams the navigation systems of biting midges. Rich in Geraniol, it serves as an extra layer of flea and tick defense.</p></div>
-        <div class="ing-card"><b>7. Lavender Oil</b><p>The healer. Calms the inflammation of old bites and supports skin repair after a day in the field.</p></div>
-        <div class="ing-card"><b>8. Rosemary Oil</b><p>The preservative. Adds a clean herbal finish while acting as a natural defense against outdoor pests.</p></div>
+        <div class="ing-card"><b>1. Beeswax</b>The physical wall. A breathable, dense wax barrier that no-see-um mouthparts physically cannot penetrate.</div>
+        <div class="ing-card"><b>2. Lanolin</b>The grip. Pure USP wool grease. It’s the world’s most effective waterproof adhesive, keeping the shield on while you sweat.</div>
+        <div class="ing-card"><b>3. Coconut Oil</b>The cloak. Medium-chain fatty acids that mask the human scent, making you invisible to searching sensors.</div>
+        <div class="ing-card"><b>4. Catnip Oil</b>The powerhouse. University proven to be 10x more effective than DEET. It triggers a physical "pain" response in biting insects.</div>
+        <div class="ing-card"><b>5. Cedarwood Oil</b>The anchor. A heavy base-note that binds the other oils to the wax. Cedarwood is also a primary defense against fleas and ticks.</div>
+        <div class="ing-card"><b>6. Palmarosa Oil</b>The radar jammer. Jams the navigation systems of biting midges. Rich in Geraniol, it serves as an extra layer of flea and tick defense.</div>
+        <div class="ing-card"><b>7. Lavender Oil</b>The healer. Calms the inflammation of old bites and supports skin repair after a day in the field.</div>
+        <div class="ing-card"><b>8. Rosemary Oil</b>The preservative. Keeps the botanical blend stable in the sun and adds a fresh, herbal finish to the scent.</div>
     </div>
 </div>
 
 <div class="cta-section">
-    <h3>Rancher Shield<sup>&trade;</sup></h3>
+    <h3>Rancher Shield</h3>
     <p>Hand-Poured 2oz Small-Batch Tin | $20.00</p><br><br>
     <a href="mailto:dustinbermingham@gmail.com" class="btn">Order your Rancher Shield today!</a>
 </div>
 
 <div class="footer">
-    <p><b>Ingredients:</b> Virgin Coconut Oil, USP Anhydrous Lanolin, Pure Yellow Beeswax, Proprietary Botanical Blend (Catnip, Lavender, Palmarosa, Cedarwood, Rosemary).</p>
-    <p class="full-ingredients">Rancher Shield is a handcrafted botanical skin balm. Not a drug or registered pesticide. Perform patch test before use. Contains Lanolin (Wool) and Coconut Oil (Tree Nut). Made in Shingle Springs, California.</p>
+    <p class="official-ingredients"><b>Ingredients:</b> Virgin Coconut Oil, USP Anhydrous Lanolin, Pure Yellow Beeswax, Proprietary Botanical Blend (Catnip Oil, Lavender Oil, Palmarosa Oil, Cedarwood Oil, Rosemary Oil).</p>
+    <p>Rancher Shield is a handcrafted botanical skin balm. Not a drug or registered pesticide. Perform patch test before use. Contains Lanolin (Wool) and Coconut Oil (Tree Nut). Made in Shingle Springs, California.</p>
 </div>
 
 </body>
