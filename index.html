@@ -11,8 +11,8 @@
     <meta property="og:url" content="https://RancherShield.com">
     <meta property="og:description" content="Superior Botanical Barriers for the Modern Rancher.">
 
-    <!-- High-End Font Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <!-- High-End Font Links: Added Cinzel for Branding -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -32,15 +32,14 @@
         }
         
         h1 { 
-            font-family: 'Cormorant Garamond', serif; 
-            font-size: 4em; 
+            font-family: 'Cinzel', serif; /* UPDATED FONT */
+            font-size: clamp(2em, 8vw, 4em); 
             margin: 0; 
-            letter-spacing: 8px; 
+            letter-spacing: 6px; 
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 700;
         }
 
-        /* TINY TRADEMARK FIX */
         h1 sup { 
             font-size: 0.3em; 
             vertical-align: super; 
@@ -49,26 +48,24 @@
         }
         
         .tagline { 
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic; 
-            font-size: 1.4em; 
-            margin-top: 10px;
+            font-family: 'Cinzel', serif; /* UPDATED FONT */
+            font-size: 1.1em; 
+            margin-top: 15px;
             color: var(--clay);
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        /* SHOWS THE WHOLE PHOTO WITHOUT BEING GIANT */
         .hero-image { 
             width: 100%; 
-            max-width: 600px; /* Prevents the 'Giant' look */
-            height: auto;     /* Shows the whole photo / no cropping */
+            max-width: 600px; 
+            height: auto;     
             display: block; 
-            margin: 0 auto;   /* Centers the photo */
+            margin: 0 auto;   
         }
         
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
         
-        /* CENTERED SCIENCE TITLE */
         .science-header {
             text-align: center;
             margin-top: 60px;
@@ -76,22 +73,33 @@
         }
 
         h2 { 
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cinzel', serif; /* UPDATED FONT */
             color: var(--forest); 
-            font-size: 2.5em; 
+            font-size: 2.2em; 
             border-bottom: 1px solid var(--clay); 
             padding-bottom: 10px; 
             margin-top: 50px; 
         }
         
+        /* CENTERED AND REFINED STORY BOX */
         .story-box { 
             background: white; 
-            padding: 40px; 
+            padding: 50px; 
             border: 1px solid #e0e0e0;
             box-shadow: 10px 10px 0px var(--forest);
-            margin-top: -40px; /* Balanced overlap */
+            margin-top: -40px; 
             position: relative;
             z-index: 10;
+            text-align: center;
+        }
+
+        .story-box h2 {
+            border-bottom: none;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-bottom: 2px solid var(--clay);
+            padding-bottom: 5px;
         }
 
         .ingredient-img { width: 100%; height: auto; margin-top: 40px; border: 1px solid #ddd; }
@@ -103,12 +111,20 @@
         .ing-card b { 
             color: var(--clay); 
             display: block; 
-            font-size: 1.5em; 
+            font-size: 1.3em; 
             margin-bottom: 10px; 
-            font-family: 'Cormorant Garamond', serif; 
+            font-family: 'Cinzel', serif; /* UPDATED FONT */
         }
         
         .cta-section { text-align: center; padding: 80px 20px; background: var(--forest); color: white; margin-top: 60px; }
+        
+        .cta-section h3 {
+            font-family: 'Cinzel', serif; /* UPDATED FONT */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 4px;
+        }
+
         .btn { 
             background: var(--clay); 
             color: white; 
@@ -119,6 +135,7 @@
             letter-spacing: 3px;
             font-size: 1.1em;
             display: inline-block;
+            font-family: 'Cinzel', serif;
         }
         
         .footer { background: #111; color: #aaa; padding: 60px 20px; text-align: center; font-size: 0.85em; }
@@ -137,7 +154,8 @@
 <div class="container">
     <div class="story-box">
         <h2>Rancher Owned. Foothills Proven.</h2>
-        <p>Rancher Shield<sup>&trade;</sup> wasn't born in a boardroom. It was forged in the clay hills of Shingle Springs, California. As ranchers, we know that store-bought sprays don’t stand up to long workdays and aggressive biting insects. We built a 100% active ingredient barrier with no fillers to stand against the no-see-ums, midges, ticks, and fleas that plague the foothills. Rancher Shield works as hard as you do.</p>
+        <p>Rancher Shield<sup>&trade;</sup> was born out of necessity in the heart of the Sierra Foothills. In the height of a Shingle Springs summer, when the heat cracks the clay soil and the biting midges emerge by the millions, store-bought sprays simply aren't enough. We needed a solution that would stand up to 12-hour days in the field—something that wouldn't sweat off, sting the eyes, or wash away with the dust.</p>
+        <p>We spent months perfecting a 100% active ingredient barrier. No water, no fillers, and no industrial chemicals. By combining traditional ranch wisdom with modern botanical science, we created a thick, waxy shield that physically blocks the bite while masking your scent from the pests that plague our land. From the dawn-active Valley Black Gnat to the night-midges that find their way indoors, Rancher Shield works as hard as you do.</p>
     </div>
 
     <div class="science-header">
@@ -160,9 +178,9 @@
 </div>
 
 <div class="cta-section">
-    <h3>Rancher Shield<sup>&trade;</sup></h3>
+    <h3>RANCHER SHIELD<sup>&trade;</sup></h3>
     <p>Hand-Poured 2oz Small-Batch Tin | $20.00</p><br><br>
-    <a href="mailto:dustinbermingham@gmail.com" class="btn">Order your Rancher Shield today!</a>
+    <a href="mailto:dustinbermingham@gmail.com" class="btn">Order Yours Today</a>
 </div>
 
 <div class="footer">
