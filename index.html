@@ -11,6 +11,9 @@
     <meta property="og:url" content="https://RancherShield.com">
     <meta property="og:description" content="Superior Botanical Barriers for the Modern Rancher.">
 
+    <!-- Speed Optimization: Preload the Hero Image -->
+    <link rel="preload" as="image" href="hero.webp">
+
     <!-- High-End Font Links -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     
@@ -37,7 +40,7 @@
             margin: 0; 
             letter-spacing: 8px; 
             text-transform: uppercase;
-            font-weight: 400;
+            font-weight: 400; 
         }
 
         h1 sup { 
@@ -57,12 +60,15 @@
             font-weight: 400;
         }
 
+        /* Speed Fix: Added aspect-ratio to prevent layout shift */
         .hero-image { 
             width: 100%; 
             max-width: 600px; 
             height: auto;     
+            aspect-ratio: 1 / 1; 
             display: block; 
             margin: 0 auto;   
+            background: #eee;
         }
         
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
@@ -103,7 +109,15 @@
             padding-bottom: 5px;
         }
 
-        .ingredient-img { width: 100%; height: auto; margin-top: 40px; border: 1px solid #ddd; }
+        /* Speed Fix: Added aspect-ratio */
+        .ingredient-img { 
+            width: 100%; 
+            height: auto; 
+            aspect-ratio: 3 / 2;
+            margin-top: 40px; 
+            border: 1px solid #ddd; 
+            background: #eee;
+        }
         
         .ingredient-grid { display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
         @media (min-width: 600px) { .ingredient-grid { grid-template-columns: 1fr 1fr; } }
@@ -155,7 +169,8 @@
     <div class="tagline">Superior Botanical Barriers for the Modern Rancher.</div>
 </header>
 
-<img src="hero.jpg" alt="Rancher Shield Tin at Sunset" class="hero-image">
+<!-- Speed Fix: Using .webp and dimension hints -->
+<img src="hero.webp" alt="Rancher Shield Tin at Sunset" class="hero-image" width="600" height="600">
 
 <div class="container">
     <div class="story-box">
@@ -168,7 +183,8 @@
         <p style="font-style: italic; margin-top: 10px;">100% Active Ingredients. No Fillers.</p>
     </div>
     
-    <img src="ingredients.jpg" alt="Rancher Shield Ingredients" class="ingredient-img">
+    <!-- Speed Fix: Using .webp and dimension hints -->
+    <img src="ingredients.webp" alt="Rancher Shield Ingredients" class="ingredient-img" width="900" height="600">
     
     <div class="ingredient-grid">
         <div class="ing-card"><b>1. Beeswax</b>The Physical Wall. A breathable, dense wax barrier that no see-um mouthparts physically cannot penetrate.</div>
