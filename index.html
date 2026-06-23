@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://RancherShield.com">
     <meta property="og:description" content="Superior Botanical Barriers for the Modern Rancher.">
 
-    <!-- Speed Optimization: Preload the Hero Image -->
+    <!-- Speed Optimization -->
     <link rel="preload" as="image" href="hero.webp">
 
     <!-- High-End Font Links -->
@@ -40,7 +40,7 @@
             margin: 0; 
             letter-spacing: 8px; 
             text-transform: uppercase;
-            font-weight: 400; 
+            font-weight: 400;
         }
 
         h1 sup { 
@@ -60,15 +60,13 @@
             font-weight: 400;
         }
 
-        /* Speed Fix: Added aspect-ratio to prevent layout shift */
+        /* FIX: REMOVED ASPECT-RATIO TO STOP SQUISHING */
         .hero-image { 
             width: 100%; 
             max-width: 600px; 
             height: auto;     
-            aspect-ratio: 1 / 1; 
             display: block; 
             margin: 0 auto;   
-            background: #eee;
         }
         
         .container { max-width: 900px; margin: auto; padding: 40px 20px; }
@@ -109,14 +107,14 @@
             padding-bottom: 5px;
         }
 
-        /* Speed Fix: Added aspect-ratio */
+        /* FIX: REMOVED ASPECT-RATIO */
         .ingredient-img { 
             width: 100%; 
+            max-width: 900px;
             height: auto; 
-            aspect-ratio: 3 / 2;
-            margin-top: 40px; 
+            margin: 40px auto 0 auto; 
             border: 1px solid #ddd; 
-            background: #eee;
+            display: block;
         }
         
         .ingredient-grid { display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 30px; }
@@ -149,7 +147,7 @@
             text-decoration: none; 
             font-weight: 600; 
             text-transform: uppercase; 
-            letter-spacing: 3px;
+            letter-spacing: 3px; 
             font-size: 1.1em;
             display: inline-block;
             font-family: 'Cinzel', serif;
@@ -169,8 +167,7 @@
     <div class="tagline">Superior Botanical Barriers for the Modern Rancher.</div>
 </header>
 
-<!-- Speed Fix: Using .webp and dimension hints -->
-<img src="hero.webp" alt="Rancher Shield Tin at Sunset" class="hero-image" width="600" height="600">
+<img src="hero.webp" alt="Rancher Shield Tin at Sunset" class="hero-image">
 
 <div class="container">
     <div class="story-box">
@@ -183,14 +180,13 @@
         <p style="font-style: italic; margin-top: 10px;">100% Active Ingredients. No Fillers.</p>
     </div>
     
-    <!-- Speed Fix: Using .webp and dimension hints -->
-    <img src="ingredients.webp" alt="Rancher Shield Ingredients" class="ingredient-img" width="900" height="600">
+    <img src="ingredients.webp" alt="Rancher Shield Ingredients" class="ingredient-img">
     
     <div class="ingredient-grid">
         <div class="ing-card"><b>1. Beeswax</b>The Physical Wall. A breathable, dense wax barrier that no see-um mouthparts physically cannot penetrate.</div>
-        <div class="ing-card"><b>2. Lanolin</b>The Grip. We use the highest quality, Pure USP Lanolin from New Zealand Marino sheep wool. It’s the world’s most effective waterproof adhesive, keeping the shield on while you sweat.</div>
+        <div class="ing-card"><b>2. Lanolin</b>The Grip. We use the highest quality, Pure USP Lanolin from New Zealand Merino sheep wool. It’s the world’s most effective waterproof adhesive, keeping the shield on while you sweat.</div>
         <div class="ing-card"><b>3. Coconut Oil</b>The Cloak. Rich in medium-chain fatty acids that mask your scent from searching sensors. Beyond the shield, it acts as a deep moisturizer that sinks into rough skin, providing a natural anti-microbial layer to keep old bites from getting angry.</div>
-        <div class="ing-card"><b>4. Catnip Oil</b>The Powerhouse. While university studies show that Catnip is 10x more effective than DEET, it’s also one of nature’s best skin soothers. Traditionally used for its calming properties, it helps take the edge off a stressful day in the field.  Catnip also naturally helps ease the redness and irritation from old bites.</div>
+        <div class="ing-card"><b>4. Catnip Oil</b>The Powerhouse. While university studies show that Catnip is 10x more effective than DEET, it’s also one of nature’s best skin soothers. Traditionally used for its calming properties, it helps take the edge off a stressful day in the field. Catnip also naturally helps ease the redness and irritation from old bites.</div>
         <div class="ing-card"><b>5. Cedarwood Oil</b>The Anchor. A heavy base-note that binds the other oils to the wax. Cedarwood is also a primary defense against fleas and ticks.</div>
         <div class="ing-card"><b>6. Palmarosa Oil</b>The Radar Jammer. Jams the navigation systems of biting midges (no see-ums). Rich in Geraniol, it serves as an extra layer of flea and tick defense.</div>
         <div class="ing-card"><b>7. Lavender Oil</b>The Soother. Calms the inflammation of old bites and supports skin repair after a day in the field.</div>
