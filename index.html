@@ -18,7 +18,7 @@
       "@type": "Product",
       "name": "Rancher Shield",
       "image": "https://RancherShield.com/hero1.webp",
-      "description": "Hand-poured botanical skin barrier designed for soothing and repairing damaged skin and protection from biting gnats, no-see-ums, ticks, and fleas. 100% active ingredients, wax-locked formula.",
+      "description": "Lanolin-free, hand-poured botanical skin barrier designed for skin repair and soothing and protection from biting gnats, no-see-ums, ticks, and fleas. 100% active ingredients, wax-locked formula.",
       "brand": {
         "@type": "Brand",
         "name": "Rancher Shield"
@@ -42,10 +42,10 @@
         "hasMerchantReturnPolicy": {
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnPeriod",
+          "returnPolicyCategory": "MerchantReturnFiniteReturnPeriod",
           "merchantReturnDays": 30,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
+          "returnMethod": "ReturnByMail",
+          "returnFees": "FreeReturn"
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
@@ -60,13 +60,13 @@
               "@type": "QuantitativeValue",
               "minValue": 1,
               "maxValue": 2,
-              "unitCode": "d"
+              "unitCode": "DAY"
             },
             "transitTime": {
               "@type": "QuantitativeValue",
               "minValue": 3,
               "maxValue": 5,
-              "unitCode": "d"
+              "unitCode": "DAY"
             }
           },
           "shippingDestination": {
@@ -89,7 +89,7 @@
         {
           "@type": "Review",
           "author": { "@type": "Person", "name": "Vicki C." },
-          "reviewBody": "This has worked wonders for my bug bites. It helps to heal much faster and seems to keep new bug bites from happening. Highly recommend!"
+          "reviewBody": "This has worked wonders for my bug bites. It helps to heal much faster with little to no scar and seems to keep new bug bites from happening."
         }
       ]
     }
@@ -241,9 +241,12 @@
             text-transform: uppercase; 
             letter-spacing: 1px; 
             font-size: 0.75em; 
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: 'Cinzel', serif; 
             text-align: center;
+            min-height: 40px;
         }
         .btn-alt:hover { background: var(--clay); color: white; }
 
@@ -268,17 +271,18 @@
 
 <div class="container">
     <div class="story-box">
-    <h2>Rancher Tested. Foothills Proven.</h2>
-    <p>After years of living and working on the land in the Sierra Nevada Foothills, we got tired of the bites. We’ve tried every remedy we could find—even the sprays that claimed they were specifically for no see-ums—and we'd still end up getting bitten all day and covered in welts in the evening. Those watery sprays just don’t stand up to the heat or the biting gnats that come out of our clay soil.</p>
-    
-    <p>We built Rancher Shield because we needed a barrier that would actually stay on for hours, even through sweat and intense heat. This isn't a thin, watery mist; it’s a thick, beeswax, castor oil and coconut based shield with no water and no fillers. It physically blocks the bite while the scent helps hide you from the pests. An added benefit of Rancher Shield is that it also works great for soothing dry, cracked skin and calming the irritation from old bites. From the biting gnats and no see-ums out in the pasture to the insects that find you in the evenings, this shield works as hard as you do through the long days and late evenings.</p>
+        <h2>Rancher Tested. Foothills Proven.</h2>
+        <p>After years of living and working on the land in the Sierra Nevada Foothills, we got tired of the bites. We’ve tried every remedy we could find—even the sprays that claimed they were specifically for no see-ums—and we'd still end up getting bitten all day and covered in welts in the evening. Those watery sprays just don’t stand up to the heat or the biting gnats that come out of our clay soil.</p>
+        
+        <p>We built Rancher Shield because we needed a barrier that would actually stay on for hours, even through sweat and intense heat. This isn't a thin, watery mist; it’s a thick, beeswax, castor oil and coconut based shield with no water and no fillers. It physically blocks the bite while the scent helps hide you from the pests. An added benefit of Rancher Shield is that it also works great for soothing dry, cracked skin and calming the irritation from old bites. From the biting gnats and no see-ums out in the pasture to the insects that find you in the evenings, this shield works as hard as you do through the long days and late evenings.</p>
 
-    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--clay); display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-        <div>✓ Designed as a Barrier Against Biting Gnats and No See-Ums</div>
-        <div>✓ Wax-Locked Formula (No Evaporation)</div>
-        <div>✓ Promotes Skin Recovery & Barrier Repair</div>
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--clay); display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 0.8em; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+            <div>✓ Designed as a Barrier Against Biting Gnats and No See-Ums</div>
+            <div>✓ Wax-Locked Formula (No Evaporation)</div>
+            <div>✓ Promotes Skin Recovery & Barrier Repair</div>
+        </div>
     </div>
-</div>
+
     <div class="science-header">
         <h2 style="display: inline-block;">The 8-Ingredient Science</h2>
         <p style="font-style: italic; margin-top: 10px;">100% Active Ingredients. No Fillers.</p>
