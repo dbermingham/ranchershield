@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://RancherShield.com/sitemap.xml
+Sitemap: https://ranchershield.com/sitemap.xml
